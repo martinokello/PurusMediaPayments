@@ -13,6 +13,8 @@ namespace PurusMediaPayments
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+
+            UnityConfig.Start();
         }
     }
 }

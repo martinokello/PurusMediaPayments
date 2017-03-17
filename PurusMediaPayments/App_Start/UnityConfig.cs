@@ -4,10 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ShadowInternationalSecurity.App_Start.UnityConfig), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(ShadowInternationalSecurity.App_Start.UnityConfig), "Shutdown")]
-
-namespace ShadowInternationalSecurity.App_Start
+namespace PurusMediaPayments
 {
 
     public class UnityConfig
