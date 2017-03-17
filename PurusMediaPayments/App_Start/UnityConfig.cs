@@ -46,7 +46,7 @@ namespace PurusMediaPayments
 
             foreach (var t in types)
             {
-                if (t.IsAssignableFrom(typeof(System.Web.Mvc.IController)))
+                if (t.IsAssignableFrom(typeof(System.Web.Http.Controllers.IHttpController)))
                 {
                     container.RegisterType(t);
                 }
