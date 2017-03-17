@@ -6,6 +6,9 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -33,9 +36,27 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            debugger;
+            var dataRequest = {Amount:'300.09',CardHolder:'Mr Martin Okello',ExpirationDate:'2019/08/18',SecurityCode:'467',CreditCardNumber:'4567123489762134'};
+            var request = JSON.stringify(dataRequest);
+        var requestUrl = 'http://localhost/PurusMediaPayments2.dev.co.uk/api/PurusMediaPayments/ProcessPayment';
+        $.ajax({
+            url:requestUrl,
+            data: request,
+            type:'POST',
+            dataType:'json',
+            contentType:'application/json',
+            success:function(data){
+            alert(data.d.Message);
+        },
+        error:function(xhrq, status, errorMethod){
+        }
+    });
+});
+    </script>
 </body>
 </html>

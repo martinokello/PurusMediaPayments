@@ -13,7 +13,7 @@ namespace PurusMediaPayments.Controllers
         private readonly IPremiumPaymentGateway _premiumPaymentGateway;
         public int MaxNumberOfPremTries { get; set; }
         public int NumberOfPremTries { get; set; }
-
+        public PurusMediaPaymentsController() { }
         public PurusMediaPaymentsController(ICheapPaymentGateway cheapPaymentGateway,
             IExpensivePaymentGateway expensivePaymentGateway, IPremiumPaymentGateway premiumPaymentGateway)
         {

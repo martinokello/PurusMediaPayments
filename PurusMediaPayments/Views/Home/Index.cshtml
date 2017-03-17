@@ -22,3 +22,25 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
 </div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var dataRequest = {Amount:'300.09',CardHolder:'Mr Martin Okello',ExpirationDate:'20190818',SecurityCode:'467',CreditCardNumber:'4567123489762134'};
+        var dataReqStr=JSON.stringify();
+        var requestUrl = 'http://localhost/PurusMediaPayments2.dev.co.uk/api/PurusMedia/ProcessPayment';
+        $.ajax({
+            url:requestUrl,
+        data:dataReqStr,
+        type:'POST',
+        dataType:'json',
+        contentType:'application/json',
+        success:function(data){
+            debugger;
+            alert(data.d.Message);
+        },
+        error:function(xhrq, status, errorMethod){
+            debugger;
+        }
+    });
+});
+</script>
