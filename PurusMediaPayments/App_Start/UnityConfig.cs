@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
+using System.Reflection;
 
 namespace PurusMediaPayments
 {
@@ -40,7 +41,16 @@ namespace PurusMediaPayments
             container.RegisterType<PurusMedia.Services.Interfaces.ICheapPaymentGateway, PurusMedia.Services.Concretes.CheapPaymentGateway>();
             container.RegisterType<PurusMedia.Services.Interfaces.IExpensivePaymentGateway, PurusMedia.Services.Concretes.ExpensivePaymentGateway>();
             container.RegisterType<PurusMedia.Services.Interfaces.IPremiumPaymentGateway, PurusMedia.Services.Concretes.PremiumPaymentGateway>();
-           
+
+            var types = Assembly.GetExecutingAssembly().GetTypes();
+
+            foreach (var t in types)
+            {
+                if (t.IsAssignableFrom(typeof(System.Web.Mvc.IController)))
+                {
+                    container.RegisterType(t);
+                }
+            }
         }
 
         /// <summary>Integrates Unity when the application starts.</summary>
