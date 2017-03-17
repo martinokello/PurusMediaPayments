@@ -1,0 +1,7 @@
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\bin\Debug\PurusMedia.Services.dll
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\bin\Debug\PurusMedia.Services.pdb
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\bin\Debug\PurusMedia.Domain.dll
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\bin\Debug\PurusMedia.Domain.pdb
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\obj\Debug\PurusMedia.Services.csprojResolveAssemblyReference.cache
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\obj\Debug\PurusMedia.Services.dll
+C:\C#Projects\PurusMediaPayments\PurusMedia.Services\obj\Debug\PurusMedia.Services.pdb

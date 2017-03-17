@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurusMediaPayments", "PurusMediaPayments\PurusMediaPayments.csproj", "{A6A0C5C6-D0E1-4119-9805-B0214FAE01EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurusMediaPayments.Tests", "PurusMediaPayments.Tests\PurusMediaPayments.Tests.csproj", "{40C64C7D-3BC3-4484-9C75-A99B7AF78425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurusMedia.Services", "PurusMedia.Services\PurusMedia.Services.csproj", "{D6338FC7-9E40-486C-A6A1-DD78D9D3079D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurusMedia.Domain", "PurusMedia.Domain\PurusMedia.Domain.csproj", "{338137DB-A4F9-4E97-A14D-24CE80FD0BA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6A0C5C6-D0E1-4119-9805-B0214FAE01EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A0C5C6-D0E1-4119-9805-B0214FAE01EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A0C5C6-D0E1-4119-9805-B0214FAE01EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A0C5C6-D0E1-4119-9805-B0214FAE01EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C64C7D-3BC3-4484-9C75-A99B7AF78425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C64C7D-3BC3-4484-9C75-A99B7AF78425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C64C7D-3BC3-4484-9C75-A99B7AF78425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C64C7D-3BC3-4484-9C75-A99B7AF78425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6338FC7-9E40-486C-A6A1-DD78D9D3079D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6338FC7-9E40-486C-A6A1-DD78D9D3079D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6338FC7-9E40-486C-A6A1-DD78D9D3079D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6338FC7-9E40-486C-A6A1-DD78D9D3079D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338137DB-A4F9-4E97-A14D-24CE80FD0BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338137DB-A4F9-4E97-A14D-24CE80FD0BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338137DB-A4F9-4E97-A14D-24CE80FD0BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338137DB-A4F9-4E97-A14D-24CE80FD0BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal
