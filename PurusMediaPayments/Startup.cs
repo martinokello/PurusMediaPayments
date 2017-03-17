@@ -14,7 +14,6 @@ namespace PurusMediaPayments
         {
             ConfigureAuth(app);
 
-            UnityConfig.Start();
         }
     }
 }

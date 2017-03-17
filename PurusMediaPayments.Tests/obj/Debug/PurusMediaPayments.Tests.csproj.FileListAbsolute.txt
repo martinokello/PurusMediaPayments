@@ -64,7 +64,6 @@ C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\PurusMedia.S
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\PurusMedia.Domain.dll
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\PurusMedia.Services.pdb
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\PurusMedia.Domain.pdb
-C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\WebActivatorEx.dll
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\Microsoft.Practices.Unity.dll
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\C#Projects\PurusMediaPayments\PurusMediaPayments.Tests\bin\Debug\Microsoft.Practices.Unity.xml
