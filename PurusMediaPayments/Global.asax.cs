@@ -18,7 +18,7 @@ namespace PurusMediaPayments
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            UnityConfig.Start();
+            UnityConfig.RegisterComponents();
         }
     }
 }
