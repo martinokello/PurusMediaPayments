@@ -26,11 +26,11 @@
 
     $(document).ready(function(){
         var dataRequest = {Amount:'300.09',CardHolder:'Mr Martin Okello',ExpirationDate:'20190818',SecurityCode:'467',CreditCardNumber:'4567123489762134'};
-        var dataReqStr=JSON.stringify();
-        var requestUrl = 'http://localhost/PurusMediaPayments2.dev.co.uk/api/PurusMedia/ProcessPayment';
+        var request = JSON.stringify();
+        var requestUrl = 'http://localhost/PurusMediaPayments2.dev.co.uk/api/PurusMediaPayments/ProcessPayment';
         $.ajax({
             url:requestUrl,
-        data:dataReqStr,
+            data: request,
         type:'POST',
         dataType:'json',
         contentType:'application/json',

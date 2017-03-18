@@ -344,7 +344,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>42764</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/PurusMediaPayments.dev.co.uk</IISUrl>
+          <IISUrl>http://localhost/PurusMediaPayments2.dev.co.uk</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

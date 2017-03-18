@@ -29,6 +29,13 @@ namespace PurusMediaPayments.Controllers
         {
             if (ModelState.IsValid)
             {
+                _cheapPaymentGateway.MinValue = 0;
+                _cheapPaymentGateway.MaxValue = 20;
+                _expensivePaymentGateway.MinValue = 21;
+                _expensivePaymentGateway.MaxValue = 500;
+                _premiumPaymentGateway.MinValue = 501;
+                _premiumPaymentGateway.MaxValue = decimal.MaxValue;
+
                 ResponseObject responseObject  = _cheapPaymentGateway.ProcessPayment(request);
                 if (responseObject.StatusCode != "200")
                     responseObject = _expensivePaymentGateway.ProcessPayment(request);
