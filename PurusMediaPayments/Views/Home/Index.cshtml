@@ -26,7 +26,7 @@
 
     $(document).ready(function(){
         var dataRequest = {Amount:'300.09',CardHolder:'Mr Martin Okello',ExpirationDate:'20190818',SecurityCode:'467',CreditCardNumber:'4567123489762134'};
-        var request = JSON.stringify();
+        var request = JSON.stringify(dataRequest);
         var requestUrl = 'http://localhost/PurusMediaPayments2.dev.co.uk/api/PurusMediaPayments/ProcessPayment';
         $.ajax({
             url:requestUrl,
@@ -36,7 +36,7 @@
         contentType:'application/json',
         success:function(data){
             debugger;
-            alert(data.d.Message);
+            alert(data.StatusCode+": "+data.Message);
         },
         error:function(xhrq, status, errorMethod){
             debugger;
