@@ -93,11 +93,34 @@ namespace PurusMediaPayments.Tests.Controllers
 
 
         [TestMethod]
-        public void Test_Valid_Model_Object_Cheap_Gateway_200_StatusCode()
+        public void Test_BadRequest_Model_Object_Amount_Minus_50_Returns_403_StatusCode()
         {
             //
             // TODO: Add test logic here
             //
+            var request = new RequestObject
+            {
+                Amount = -50,
+                CardHolder = "Mr. Joe Bloggs",
+                CreditCardNumber = "1234567890123456",
+                SecurityCode = "345",
+                ExpirationDate = DateTime.Now.AddMonths(6)
+            };
+
+            var results = new List<ValidationResult>();
+
+            _validationContext = new ValidationContext(request,
+            serviceProvider: null, items: null);
+            Validator.TryValidateObject(request, _validationContext, results, true);
+
+            Assert.AreEqual("Bad Request", results[0].ErrorMessage);
+        }
+        [TestMethod]
+        public void Test_Valid_Model_Object_Cheap_Gateway_200_StatusCode()
+        {
+            //
+            // TODO: Add test logic here
+            // 
             //
             var request = new RequestObject
             {

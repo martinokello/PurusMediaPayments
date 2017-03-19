@@ -36,7 +36,7 @@ namespace PurusMediaPayments.Controllers
                 _premiumPaymentGateway.MinValue = 501;
                 _premiumPaymentGateway.MaxValue = decimal.MaxValue;
 
-                ResponseObject responseObject  = _cheapPaymentGateway.ProcessPayment(request);
+                ResponseObject responseObject = _cheapPaymentGateway.ProcessPayment(request);
                 if (responseObject.StatusCode != "200")
                     responseObject = _expensivePaymentGateway.ProcessPayment(request);
                 if (responseObject.StatusCode != "200")
@@ -52,7 +52,10 @@ namespace PurusMediaPayments.Controllers
                 return responseObject;
             }
 
-            return new ResponseObject { StatusCode = "403", Message="Bad Request" };
+            else
+            {
+                return new ResponseObject { StatusCode = "403", Message = "Bad Request" };
+            }
         }
     }
 }
